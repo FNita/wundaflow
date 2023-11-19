@@ -1,0 +1,1255 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <title>Wundaflow - Build robust and resilient Web 3.0 apps</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+
+    <!-- Favicon -->
+    <link href="img/favicons/favicon.ico" rel="icon">
+
+    <!-- Open Graph -->
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Wundaflow - Build robust and resilient Web 3.0 apps" />
+    <meta property="og:description" content="" />
+    <meta property="og:url" content="" />
+    <meta property="og:site_name" content="Wundaflow" />
+    <meta property="og:image" content="img/intro.jpeg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:type" content="image/jpeg" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@" />
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+
+    <!-- FontAwesome Icons Stylesheet -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Animate Stylesheet -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.compat.css"
+        integrity="sha512-gFn7XRm5v3GlgOwAQ80SXDT8pyg6uaV9JbW2OkNx5Im2jR8zx2X/3DbHymcZnUraU+klZjRJqNfNkFN7SyR3fg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- OWL Carousel Stylesheet -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+        integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Bootstrap Stylesheet -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.1/css/bootstrap.min.css"
+        integrity="sha512-Z/def5z5u2aR89OuzYcxmDJ0Bnd5V1cKqBEbvLOiUNWdg9PQeXVvXLI90SE4QOHGlfLqUnDNVAYyZi8UwUTmWQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Main Stylesheet -->
+    <link href="css/main.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/template.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+
+    <!-- Spinner Start -->
+    <div id="spinner"
+        class="show position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-grow text-primary" role="status"></div>
+    </div>
+    <!-- Spinner End -->
+
+
+    <!-- Navbar Start -->
+    <div class="section navbar navbar-expand-lg bg-dark navbar-dark" id="navbar">
+        <div class="container position-relative">
+            <a href="index.html" class="">
+                <img src="img/logo.png" alt="" height="40">
+            </a>
+            <div id="menu-bar" onclick="menuOnClick()">
+                <div id="bar1" class="bar"></div>
+                <div id="bar2" class="bar"></div>
+                <div id="bar3" class="bar"></div>
+            </div>
+
+            <div class="menu-bg" id="menu-bg"></div>
+
+            <div class="nav justify-content-end" id="nav">
+                <div class="navbar-nav align-items-center">
+                    <a href="#about" class="nav-item nav-link text-center">About Us</a>
+                    <a href="#workflow" class="nav-item nav-link text-center">Workflow</a>
+                    <a href="#features" class="nav-item nav-link text-center">Features</a>
+                    <a href="#coin" class="nav-item nav-link text-center">Wundacoin</a>
+                    <a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#subscribeModal"
+                        class="nav-item nav-link text-center">Subscribe</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        function menuOnClick() {
+            document.getElementById("menu-bar").classList.toggle("change");
+            document.getElementById("nav").classList.toggle("change");
+            document.getElementById("menu-bg").classList.toggle("change-bg");
+        }
+    </script>
+    <!-- Navbar End -->
+
+
+
+    <!-- Intro Start -->
+    <div class="section d-flex align-items-center position-relative" id="intro">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-sm-12 col-md-5">
+                    <div class="hero-text">
+                        <h1 class="py-4">
+                            <div class="display-3 fw-bold mb-3 revealOnScroll" data-animation="fadeInLeft">Wundaflow
+                            </div>
+                            <div style="font-weight: 300;" class="revealOnScroll delay-02s" data-animation="fadeInLeft">
+                                Build <span class="fw-bold text-primary">robust and resilient</span><br>Web 3.0
+                                apps.
+                            </div>
+                        </h1>
+                        <div>
+                            <div class="hero-btn">
+                                <a class="btn btn-primary rounded shadow px-3 px-sm-5 py-2 py-sm-3 me-2 mb-3 revealOnScroll delay-06s"
+                                    data-animation="fadeInLeft" href="javascript:void(0)" data-bs-toggle="modal"
+                                    data-bs-target="#subscribeModal">
+                                    <div class="d-flex align-items-center">
+                                        <div class="text-start">
+                                            <div>Join waitlist</div>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a class="btn btn-primary-hollow border-2 rounded px-3 px-sm-5 py-2 py-sm-3 mb-3 revealOnScroll delay-04s"
+                                    data-animation="fadeInLeft" href="https://docs.wundaflow.com/">
+                                    <div class="d-flex align-items-center">
+                                        <div class="text-start">
+                                            <div>Read the docs</div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="mt-4 revealOnScroll delay-08s" data-animation="fadeInLeft">
+                                <div class="pb-2 text-white">Easily connect with</div>
+                                <img src="img/azure.png" alt="Google Cloud Platform" class="rounded-circle" width="50">
+                                <img src="img/gcp.png" alt="Microsoft Azure" class="rounded-circle" width="50"
+                                    style="margin-left: -25px;">
+                                <img src="img/aws.png" alt="Amazon Web Services" class="rounded-circle" width="50"
+                                    style="margin-left: -25px;">
+                                <img src="img/openai.png" alt="Open AI" class="rounded-circle" width="50"
+                                    style="margin-left: -25px;">
+                                <div class="d-inline-block ms-2 text-white" style="font-size: 1rem">
+                                    <span style="font-weight: bold;">+83</span> other services
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-7 py-5 position-relative">
+
+                    <div class="revealOnScroll position-absolute delay-06s" data-animation="fadeIn"
+                        style="height: 500px; width: 500px; left:calc(50% - 250px); top:calc(50% - 250px);">
+                        <div class="position-absolute bg-primary-light rounded-circle animated pulse slower infinite delay-2s"
+                            style="height: 700px; width: 700px; left:calc(50% - 350px); top:calc(50% - 350px); opacity: .3;">
+                        </div>
+                        <div class="position-absolute bg-primary rounded-circle animated pulse slower infinite delay-1s"
+                            style="height: 500px; width: 500px; left:calc(50% - 250px);top:calc(50% - 250px); opacity: .5;">
+                        </div>
+                        <div class="position-absolute bg-primary rounded-circle animated pulse slower infinite"
+                            style="height: 300px; width: 300px; left:calc(50% - 150px);top:calc(50% - 150px)"></div>
+                    </div>
+
+                    <div class="blockchain position-relative d-flex align-items-center justify-content-center mb-5 pb-5"
+                        style="z-index:2;">
+                        <div class="bg-dark rounded-3 p-2 me-2 me-sm-3 revealOnScroll" data-animation="fadeInRight"
+                            style="border: 2px dotted grey;">
+                            <img src="img/ethereum.png" alt="" height="40" class="">
+                        </div>
+                        <div class="bg-dark rounded-3 p-2 me-2 me-sm-3 revealOnScroll delay-02s"
+                            data-animation="fadeInRight" style="border: 2px dotted grey;">
+                            <img src="img/ethereum.png" alt="" height="40" class="">
+                        </div>
+                        <div class="bg-black rounded-3 p-2 me-2 me-sm-3 revealOnScroll delay-04s"
+                            data-animation="fadeInRight" style="border: 4px solid grey;">
+                            <img src="img/ethereum.png" alt="" height="40" class="">
+                        </div>
+                        <div class="bg-black rounded-3 p-2 me-2 me-sm-3 revealOnScroll delay-06s"
+                            data-animation="fadeInRight" style="border: 2px solid grey;">
+                            <img src="img/ethereum.png" alt="" height="40" class="">
+                        </div>
+                        <div class="bg-black rounded-3 p-2 revealOnScroll delay-08s" data-animation="fadeInRight"
+                            style="border: 2px solid grey;">
+                            <img src="img/ethereum.png" alt="" height="40" class="">
+                        </div>
+                    </div>
+
+                    <div class="row align-items-center position-relative">
+                        <img src="img/arrow1.png" alt=""
+                            class="top-dotted-arrow position-absolute revealOnScroll delay-04s" data-animation="fadeIn">
+
+                        <div class="terminal col-md-5 revealOnScroll delay-06s" data-animation="bounceIn"
+                            style="padding: 0;">
+                            <div class="position-relative bg-black shadow text-white rounded-3 p-3">
+                                <div class="d-flex justify-content-between align-items-center fs-7">
+                                    <div>> Checking block transactions...</div>
+                                    <div><i class="fa-solid fa-check fa-lg text-secondary"></i></div>
+                                </div>
+                                <div class="d-flex justify-content-between align-items-center fs-7">
+                                    <div>> Logic trigger found</div>
+                                    <div><i class="fa-solid fa-check fa-lg text-secondary"></i></div>
+                                </div>
+                                <div class="d-flex justify-content-between align-items-center fs-7">
+                                    <div>> Checking conditions...</div>
+                                    <div><i class="fa-solid fa-check fa-lg text-secondary"></i></div>
+                                </div>
+                                <div class="d-flex justify-content-between align-items-center fs-7">
+                                    <div>> Conditions met</div>
+                                    <div><i class="fa-solid fa-check fa-lg text-secondary"></i></div>
+                                </div>
+                                <div class="d-flex justify-content-between align-items-center fs-7">
+                                    <div>> Executing workflow...</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <img src="img/arrow.png" alt=""
+                            class="bottom-dotted-arrow position-absolute revealOnScroll delay-08s"
+                            data-animation="fadeIn">
+
+                        <div class="pcscreen col-md-7">
+                            <div class="position-relative bg-black shadow text-white rounded-3 p-3 revealOnScroll delay-1s"
+                                data-animation="fadeIn">
+                                <div class="fs-7 mb-3">
+                                    Workflow <b>upgrade-nft</b> started...
+                                </div>
+                                <div class="d-flex justify-content-between align-items-center fs-7 p-2 mb-2 bg-primary rounded revealOnScroll delay-12s"
+                                    data-animation="fadeIn">
+                                    <div class="">
+                                        <img src="img/lamda.png" alt="" height="35" class="rounded me-2">
+                                        <span>Invoking regenerateNftImage</span>
+                                    </div>
+                                    <div><i class="fa-solid fa-circle-check fa-lg text-secondary"></i></div>
+                                </div>
+                                <div class="d-flex justify-content-between align-items-center fs-7 p-2 mb-2 bg-primary rounded revealOnScroll delay-14s"
+                                    data-animation="fadeIn">
+                                    <div class="">
+                                        <img src="img/lamda.png" alt="" height="35" class="rounded me-2">
+                                        <span>Invoking updateNftMetadata</span>
+                                    </div>
+                                    <div><i class="fa-solid fa-circle-check fa-lg text-secondary"></i></div>
+                                </div>
+                                <div class="d-flex justify-content-between align-items-center fs-7 p-2 bg-primary rounded revealOnScroll delay-16s"
+                                    data-animation="fadeIn">
+                                    <div class="">
+                                        <span class="bg-light d-inline-block rounded me-2"
+                                            style="height: 35px;width: 35px; padding:3px"><img src="img/webhook.png"
+                                                alt="" height="28"></span>
+                                        <span>Sending webhook</span>
+                                    </div>
+                                    <div><i class="fa-solid fa-circle-check fa-lg text-secondary"></i></div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+            <a href="#about" class="btn arrow-nextsection text-primary" style="bottom: 30px;">
+                <i class="fa-solid fa-chevron-down"></i>
+            </a>
+        </div>
+    </div>
+    <!-- Intro End -->
+
+
+
+    <!-- Partners Start -->
+    <section class="partners container-fluid position-relative section-separator-top section-separator-bottom py-5"
+        id="partners" style="padding:0;">
+        <h3 class="text-center pb-3 pb-sm-5 revealOnScroll" data-animation="fadeInUp">
+            <span class="fw-light"><span class="fw-bold">Wundaflow</span> integrates perfectly with</span>
+        </h3>
+        <div class="slider">
+            <div class="slide-track">
+                <div class="slide"><img src="img/coins/bitcoin.png" alt="Bitcoin">Bitcoin</div>
+                <div class="slide"><img src="img/coins/ethereum.png" alt="Ethereum">Ethereum</div>
+                <div class="slide"><img src="img/coins/solana.png" alt="Solana" class="me-3">Solana</div>
+                <div class="slide"><img src="img/coins/bnb.png" alt="BNB Chain" class="me-3">BNB Chain</div>
+                <div class="slide"><img src="img/coins/cardano.png" alt="Cardano" class="me-3">Cardano</div>
+                <div class="slide"><img src="img/coins/polygon.png" alt="Polygon" class="me-3">Polygon</div>
+                <div class="slide"><img src="img/coins/XRPL.png" alt="XRP Ledger" class="me-3">XRP Ledger
+                </div>
+                <div class="slide"><img src="img/coins/stellar.png" alt="Stellar" class="me-3">Stellar</div>
+                <div class="slide"><img src="img/coins/EOSIO.png" alt="EOSIO">EOSIO</div>
+                <div class="slide"><img src="img/coins/corda.png" alt="Corda" class="me-3">Corda</div>
+                <div class="slide"><img src="img/coins/bitcoin.png" alt="Bitcoin">Bitcoin</div>
+                <div class="slide"><img src="img/coins/ethereum.png" alt="Ethereum">Ethereum</div>
+                <div class="slide"><img src="img/coins/solana.png" alt="Solana" class="me-3">Solana</div>
+                <div class="slide"><img src="img/coins/bnb.png" alt="BNB Chain" class="me-3">BNB Chain</div>
+                <div class="slide"><img src="img/coins/cardano.png" alt="Cardano" class="me-3">Cardano</div>
+                <div class="slide"><img src="img/coins/polygon.png" alt="Polygon" class="me-3">Polygon</div>
+                <div class="slide"><img src="img/coins/XRPL.png" alt="XRP Ledger" class="me-3">XRP Ledger
+                </div>
+                <div class="slide"><img src="img/coins/stellar.png" alt="Stellar" class="me-3">Stellar</div>
+                <div class="slide"><img src="img/coins/EOSIO.png" alt="EOSIO">EOSIO</div>
+                <div class="slide"><img src="img/coins/corda.png" alt="Corda" class="me-3">Corda</div>
+            </div>
+        </div>
+    </section>
+    <!-- Partners Start -->
+
+
+
+    <!-- About Start -->
+    <div class="section about text-white pt-5" id="about">
+        <div class="container pt-5">
+            <div class="section-header revealOnScroll" data-animation="fadeInUp">
+                <h2 class="text-capitalize text-center display-6" style="font-weight: 300;">What is <span
+                        class="fw-bold">Wundaflow</span>?</h2>
+            </div>
+            <div class="row justify-content-center align-items-center">
+                <div class="col-md-6 p-4 revealOnScroll" data-animation="fadeInLeft">
+                    <div class="about-text mb-4">
+                        <p><span class="fw-bold">Wundaflow</span> is a highly-available workflow engine designed
+                            specifically for applications that need to interact with the blockchain, or smart contracts
+                            that need to interact with the real world.
+                        </p>
+                        <p>
+                            You can think of Wundaflow as IFTTT for crypto. However, as well as providing programmable
+                            event workflows and super-powers to your smart contracts, we also inject resilience and
+                            scalability to your web2 applications.
+                        </p>
+                        <p>High-performing engineering teams already know the power that workflows bring to their
+                            codebase, Wundaflow extends that to web3.
+                        </p>
+                    </div>
+                    <a class="btn btn-secondary-hollow border-2 rounded px-3 px-sm-5 py-2 py-sm-3 mb-3 revealOnScroll delay-02s"
+                        data-animation="fadeInLeft" href="https://docs.wundaflow.com/">
+                        <div class="d-flex align-items-center">
+                            <div class="text-start">
+                                <div>Learn more</div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-6 p-4 revealOnScroll" data-animation="fadeInRight">
+                    <h4 class="mb-3 fw-light">Perfect for</h4>
+                    <div class="row g-3 justify-content-center text-black">
+
+                        <div class="col-6 col-xl-4 revealOnScroll delay-02s" data-animation="fadeInRight">
+                            <div class="bg-secondary rounded d-flex justify-content-start align-items-center p-2">
+                                <i class="fa-solid fa-2x fa-baseball-bat-ball"></i>
+                                <div class="">
+                                    <h6 class="ms-3 mb-0">Gaming<br>eSports</h6>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-xl-4 revealOnScroll delay-04s" data-animation="fadeInRight">
+                            <div class="bg-secondary rounded d-flex justify-content-start align-items-center p-2">
+                                <i class="fa-solid fa-2x fa-network-wired"></i>
+                                <div class="">
+                                    <h6 class="ms-3 mb-0">DeFi</h6>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-xl-4 revealOnScroll delay-06s" data-animation="fadeInRight">
+                            <div class="bg-secondary rounded d-flex justify-content-start align-items-center p-2">
+                                <i class="fa-regular fa-2x fa-thumbs-up"></i>
+                                <div class="">
+                                    <h6 class="ms-3 mb-0">SocialFi</h6>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-xl-4 revealOnScroll delay-02s" data-animation="fadeInRight">
+                            <div class="bg-secondary rounded d-flex justify-content-start align-items-center p-2">
+                                <i class="fa-solid fa-2x fa-money-check-dollar"></i>
+                                <div class="">
+                                    <h6 class="ms-3 mb-0">FinTech</h6>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-xl-4 revealOnScroll delay-04s" data-animation="fadeInRight">
+                            <div class="bg-secondary rounded d-flex justify-content-start align-items-center p-2">
+                                <i class="fa-brands fa-2x fa-connectdevelop"></i>
+                                <div class="">
+                                    <h6 class="ms-3 mb-0">Oracles</h6>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-xl-4 revealOnScroll delay-06s" data-animation="fadeInRight">
+                            <div class="bg-secondary rounded d-flex justify-content-start align-items-center p-2">
+                                <i class="fa-regular fa-2x fa-image"></i>
+                                <div class="">
+                                    <h6 class="ms-3 mb-0">NFTs</h6>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-xl-4 revealOnScroll delay-02s" data-animation="fadeInRight">
+                            <div class="bg-secondary rounded d-flex justify-content-start align-items-center p-2">
+                                <i class="fa-solid fa-2x fa-chart-line"></i>
+                                <div class="">
+                                    <h6 class="ms-3 mb-0">Prediction markets
+                                    </h6>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-xl-4 revealOnScroll delay-04s" data-animation="fadeInRight">
+                            <div class="bg-secondary rounded d-flex justify-content-start align-items-center p-2">
+                                <i class="fa-solid fa-2x fa-microchip"></i>
+                                <div class="">
+                                    <h6 class="ms-3 mb-0">Governance<br>DAOs
+                                    </h6>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-xl-4 revealOnScroll delay-06s" data-animation="fadeInRight">
+                            <div class="bg-secondary rounded d-flex justify-content-start align-items-center p-2">
+                                <i class="fa-solid fa-2x fa-shapes"></i>
+                                <div class="">
+                                    <h6 class="ms-3 mb-0">dApps
+                                    </h6>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-xl-4 revealOnScroll delay-02s" data-animation="fadeInRight">
+                            <div class="bg-secondary rounded d-flex justify-content-start align-items-center p-2">
+                                <i class="fa-solid fa-2x fa-rocket"></i>
+                                <div class="">
+                                    <h6 class="ms-3 mb-0">Launchpads
+                                    </h6>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-xl-4 revealOnScroll delay-04s" data-animation="fadeInRight">
+                            <div class="bg-secondary rounded d-flex justify-content-start align-items-center p-2">
+                                <i class="fa-solid fa-2x fa-coins"></i>
+                                <div class="">
+                                    <h6 class="ms-3 mb-0">ICOs
+                                    </h6>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-xl-4 revealOnScroll delay-06s" data-animation="fadeInRight">
+                            <div class="bg-secondary rounded d-flex justify-content-start align-items-center p-2">
+                                <i class="fa-brands fa-2x fa-bitcoin"></i>
+                                <div class="">
+                                    <h6 class="ms-3 mb-0">Stablecoins
+                                    </h6>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-xl-4 revealOnScroll delay-02s" data-animation="fadeInRight">
+                            <div class="bg-secondary rounded d-flex justify-content-start align-items-center p-2">
+                                <i class="fa-solid fa-2x fa-robot"></i>
+                                <div class="">
+                                    <h6 class="ms-3 mb-0">Trading bots
+                                    </h6>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-xl-4 revealOnScroll delay-04s" data-animation="fadeInRight">
+                            <div class="bg-secondary rounded d-flex justify-content-start align-items-center p-2">
+                                <i class="fa-solid fa-2x fa-money-bills"></i>
+                                <div class="">
+                                    <h6 class="ms-3 mb-0">Lending
+                                    </h6>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-xl-4 revealOnScroll delay-06s" data-animation="fadeInRight">
+                            <div class="bg-secondary rounded d-flex justify-content-start align-items-center p-2">
+                                <i class="fa-solid fa-2x fa-money-bill-trend-up"></i>
+                                <div class="">
+                                    <h6 class="ms-3 mb-0">Money markets
+                                    </h6>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-6 col-xl-12 revealOnScroll delay-02s" data-animation="fadeInRight">
+                            <div class="text-white text-center py-3">
+                                <div class="">
+                                    <h6 class="mb-0">+ many more...
+                                    </h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- About End -->
+
+
+    <!-- Workflow Start -->
+    <div class="section bg-black text-white pt-5" id="workflow">
+        <div class="container pt-5">
+            <div class="section-header revealOnScroll" data-animation="fadeInUp">
+                <h2 class="text-capitalize text-center display-6 mb-5" style="font-weight: 300;">How does <span
+                        class="fw-bold">Wundaflow</span> work?</h2>
+                </h2>
+            </div>
+            <div class="row">
+                <div class="col-xl-4 text-center mb-5 revealOnScroll delay-02s" data-animation="fadeInRight">
+                    <div class="bg-primary position-relative rounded d-flex justify-content-center align-items-center fw-bold animated pulse slow infinite"
+                        style="width:50px;height:50px;box-shadow: 0 0 50px 15px #9333ea; margin:auto; z-index:1;">
+                        1</div>
+                    <h5 class="my-5 position-relative" style="z-index:2;">Ethereum blocks are mined</h5>
+                    <div class="blockchain position-relative d-flex align-items-center justify-content-center"
+                        style="z-index:2;">
+                        <div class="bg-dark rounded-3 p-2 me-2 floating" style="border: 2px dotted grey;">
+                            <img src="img/ethereum.png" alt="" height="40" class="">
+                        </div>
+                        <div class="bg-dark rounded-3 p-2 me-2 floating2" style="border: 2px dotted grey;">
+                            <img src="img/ethereum.png" alt="" height="40" class="">
+                        </div>
+                        <div class="bg-black rounded-3 p-2 me-2 floating" style="border: 4px solid grey;">
+                            <img src="img/ethereum.png" alt="" height="40" class="">
+                        </div>
+                        <div class="bg-black rounded-3 p-2 me-2 floating2" style="border: 2px solid grey;">
+                            <img src="img/ethereum.png" alt="" height="40" class="">
+                        </div>
+                        <div class="bg-black rounded-3 p-2 floating" style="border: 2px solid grey;">
+                            <img src="img/ethereum.png" alt="" height="40" class="">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xl-4 text-center mb-5 revealOnScroll delay-04s" data-animation="fadeInRight">
+                    <div class="bg-primary position-relative rounded d-flex justify-content-center align-items-center fw-bold animated pulse slow infinite"
+                        style="width:50px;height:50px;box-shadow: 0 0 50px 15px #9333ea; margin:auto; z-index:1;">
+                        2</div>
+                    <h5 class="my-5 position-relative" style="z-index:2;">Blocks are analysed within Wundaflow
+                    </h5>
+                    <div class="terminal" style="padding: 0; margin:auto; max-width: 300px;">
+                        <div class="position-relative bg-black shadow text-white rounded-3 p-3">
+                            <div class="d-flex justify-content-between align-items-center fs-7">
+                                <div>> Checking block transactions...</div>
+                                <div><i class="fa-solid fa-check fa-lg text-secondary"></i></div>
+                            </div>
+                            <div class="d-flex justify-content-between align-items-center fs-7">
+                                <div>> Logic trigger found</div>
+                                <div><i class="fa-solid fa-check fa-lg text-secondary"></i></div>
+                            </div>
+                            <div class="d-flex justify-content-between align-items-center fs-7">
+                                <div>> Checking conditions...</div>
+                                <div><i class="fa-solid fa-check fa-lg text-secondary"></i></div>
+                            </div>
+                            <div class="d-flex justify-content-between align-items-center fs-7">
+                                <div>> Conditions met</div>
+                                <div><i class="fa-solid fa-check fa-lg text-secondary"></i></div>
+                            </div>
+                            <div class="d-flex justify-content-between align-items-center fs-7">
+                                <div class="animated flash slower infinite">> Executing workflow...</div>
+                                <div><i class="fa-solid fa-arrows-rotate fa-spin"></i></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xl-4 text-center mb-5 revealOnScroll delay-06s" data-animation="fadeInRight">
+                    <div class="bg-primary position-relative rounded d-flex justify-content-center align-items-center fw-bold animated pulse slow infinite"
+                        style="width:50px;height:50px;box-shadow: 0 0 50px 15px #9333ea; margin:auto; z-index:1;">
+                        3</div>
+                    <h5 class="my-5 position-relative" style="z-index:2;">A workflow is triggered in response
+                    </h5>
+                    <div class="pcscreen col-xl-7" style="margin:auto; min-width: 280px; max-width: 350px;">
+                        <div class="position-relative bg-black shadow text-white rounded-3">
+                            <div
+                                class="d-flex justify-content-between align-items-center fs-7 p-2 mb-2 bg-primary rounded">
+                                <div class="">
+                                    <img src="img/lamda.png" alt="" height="35" class="rounded me-2">
+                                    <span>Invoking regenerateNftImage</span>
+                                </div>
+                                <div><i class="fa-solid fa-circle-check fa-lg text-secondary"></i></div>
+                            </div>
+                            <div
+                                class="d-flex justify-content-between align-items-center fs-7 p-2 mb-2 bg-primary rounded">
+                                <div class="">
+                                    <img src="img/lamda.png" alt="" height="35" class="rounded me-2">
+                                    <span>Invoking updateNftMetadata</span>
+                                </div>
+                                <div><i class="fa-solid fa-circle-check fa-lg text-secondary"></i></div>
+                            </div>
+                            <div class="d-flex justify-content-between align-items-center fs-7 p-2 bg-primary rounded">
+                                <div class="">
+                                    <span class="bg-light d-inline-block rounded me-2 animated flash slower infinite"
+                                        style="height: 35px;width: 35px; padding:3px"><img src="img/webhook.png" alt=""
+                                            height="28"></span>
+                                    <span class="animated flash slower infinite">Sending webhook</span>
+                                </div>
+                                <div><i class="fa-solid fa-lg fa-arrows-rotate fa-spin"></i></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="text-center pt-5 revealOnScroll delay-02s" data-animation="fadeInUp">
+            <a class="text-white text-uppercase" href="#features">See all features</a>
+            <a href="#features" class="btn arrow-nextsection text-white">
+                <i class="fa-solid fa-chevron-down"></i>
+            </a>
+        </div>
+
+    </div>
+    </div>
+    <!-- Workflow End -->
+
+
+    <!-- Features Start -->
+    <div class="section features position-relative pt-5 mt-5" id="features">
+        <div class="container pt-5">
+            <div class="row">
+                <div class="col-lg-5 d-none d-lg-block">
+                    <div class="row">
+                        <div class="d-flex justify-content-center align-items-center revealOnScroll"
+                            data-animation="fadeInLeft">
+                            <img src="img/blockchain.png" height="700" alt="Blockchain" class="floating2">
+                        </div>
+                    </div>
+                </div>
+                <div class="toggle-buttons-wrapper col-sm-3 col-lg-2 d-block justify-content-center align-items-center">
+                    <a href="javascript:void(0)" data-id="#feature-1"
+                        class="toggle-button bg-secondary rounded-4 shadow d-flex align-items-center justify-content-center mb-3 active revealOnScroll"
+                        data-animation="fadeInUp">
+                        <div class="text-black text-center">
+                            <i class="fa-solid fa-xl fa-dumbbell mb-3"></i>
+                            <div class="fs-7">POWERFUL</div>
+                        </div>
+                    </a>
+                    <a href="javascript:void(0)" data-id="#feature-2"
+                        class="toggle-button bg-secondary rounded-4 shadow d-flex align-items-center justify-content-center mb-3 revealOnScroll delay-02s"
+                        data-animation="fadeInUp">
+                        <div class="text-black text-center">
+                            <i class="fa-solid fa-xl fa-person-running mb-3"></i>
+                            <div class="fs-7">FAST</div>
+                        </div>
+                    </a>
+                    <a href="javascript:void(0)" data-id="#feature-3"
+                        class="toggle-button bg-secondary rounded-4 shadow d-flex align-items-center justify-content-center mb-3 revealOnScroll delay-04s"
+                        data-animation="fadeInUp">
+                        <div class="text-black text-center">
+                            <i class="fa-solid fa-xl fa-piggy-bank mb-3"></i>
+                            <div class="fs-7">AFFORDABLE</div>
+                        </div>
+                    </a>
+                    <a href="javascript:void(0)" data-id="#feature-4"
+                        class="toggle-button bg-secondary rounded-4 shadow d-flex align-items-center justify-content-center mb-3 revealOnScroll delay-06s"
+                        data-animation="fadeInUp">
+                        <div class="text-black text-center">
+                            <i class="fa-solid fa-xl fa-diagram-project mb-3"></i>
+                            <div class="fs-7">WEBHOOKS</div>
+                        </div>
+                    </a>
+                    <a href="javascript:void(0)" data-id="#feature-5"
+                        class="toggle-button bg-secondary rounded-4 shadow d-flex align-items-center justify-content-center mb-3 revealOnScroll delay-08s"
+                        data-animation="fadeInUp">
+                        <div class="text-black text-center">
+                            <i class="fa-solid fa-xl fa-cloud mb-3"></i>
+                            <div class="fs-7">CLOUDS</div>
+                        </div>
+                    </a>
+                    <a href="javascript:void(0)" data-id="#feature-6"
+                        class="toggle-button bg-secondary rounded-4 shadow d-flex align-items-center justify-content-center mb-3 revealOnScroll delay-1s"
+                        data-animation="fadeInUp">
+                        <div class="text-black text-center">
+                            <i class="fa-solid fa-xl fa-microchip mb-3"></i>
+                            <div class="fs-7">AI-READY</div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-sm-9 col-lg-5 d-flex align-items-center">
+                    <div class="feature-desc mt-3 animated fadeIn active" id="feature-1">
+                        <div class="section-header text-left">
+                            <h4 class="subtitle text-uppercase">power</h4>
+                            <h2 class="text-capitalize display-5" style="font-weight: 300;"><span
+                                    class="fw-bold">Powerful</span> API
+                            </h2>
+                        </div>
+
+                        <div class="fs-4">
+                            <p>Author, schedule, trigger and monitor complex workflows with a simple API call.
+                            </p>
+                        </div>
+                        <div class="d-flex justify-content-center align-items-center p-5">
+                            <div
+                                class="fancy-icon-back bg-black d-flex justify-content-center align-items-center rounded-circle animated pulse slower infinite">
+                                <img src="img/icons/api.png" alt="" width="100%" style="max-width: 100px;">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="feature-desc mt-3 d-none animated fadeIn" id="feature-2">
+                        <div class="section-header text-left">
+                            <h4 class="subtitle text-uppercase">fast</h4>
+                            <h2 class="text-capitalize display-5" style="font-weight: 300;"><span
+                                    class="fw-bold">Fast</span> Deployment
+                            </h2>
+                        </div>
+
+                        <div class="fs-4 mb-5">
+                            <p>We've built the hard stuff for you. Go from dev to production in days, not months.
+                            </p>
+                        </div>
+                        <div class="d-flex justify-content-center align-items-center p-5">
+                            <div
+                                class="fancy-icon-back bg-black d-flex justify-content-center align-items-center rounded-circle animated pulse slower infinite">
+                                <img src="img/icons/deploy.png" alt="" width="100%" style="max-width: 100px;">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="feature-desc mt-3 d-none animated fadeIn" id="feature-3">
+                        <div class="section-header text-left">
+                            <h4 class="subtitle text-uppercase">fair-priced</h4>
+                            <h2 class="text-capitalize display-5" style="font-weight: 300;"><span
+                                    class="fw-bold">Metered</span> Billing
+                            </h2>
+                        </div>
+
+                        <div class="fs-4 mb-5">
+                            <p>No expensive fixed plans, no contracts. Only pay for what you use via our native ERC677
+                                token.
+                            </p>
+                        </div>
+                        <div class="d-flex justify-content-center align-items-center p-5">
+                            <div
+                                class="fancy-icon-back bg-black d-flex justify-content-center align-items-center rounded-circle animated pulse slower infinite">
+                                <img src="img/icons/affordable.png" alt="" width="100%" style="max-width: 100px;">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="feature-desc mt-3 d-none animated fadeIn" id="feature-4">
+                        <div class="section-header text-left">
+                            <h4 class="subtitle text-uppercase">hooked</h4>
+                            <h2 class="text-capitalize display-5" style="font-weight: 300;"><span
+                                    class="fw-bold">Events</span> to Webhooks
+                            </h2>
+                        </div>
+
+                        <div class="fs-4 mb-5">
+                            <p>Retire your expensive chain nodes and consume simple webhooks over HTTP.
+                            </p>
+                        </div>
+                        <div class="d-flex justify-content-center align-items-center p-5">
+                            <div
+                                class="fancy-icon-back bg-black d-flex justify-content-center align-items-center rounded-circle animated pulse slower infinite">
+                                <img src="img/icons/webhooks.png" alt="" width="100%" style="max-width: 100px;">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="feature-desc mt-3 d-none animated fadeIn" id="feature-5">
+                        <div class="section-header text-left">
+                            <h4 class="subtitle text-uppercase">cloud-ready</h4>
+                            <h2 class="text-capitalize display-5" style="font-weight: 300;"><span
+                                    class="fw-bold">Cloud</span> Connected
+                            </h2>
+                        </div>
+
+                        <div class="fs-4 mb-5">
+                            <p>Plug-and-play integrations with GCP, AWS and Microsoft Azure. Just bring your own key.
+                            </p>
+                        </div>
+                        <div class="d-flex justify-content-center align-items-center p-5">
+                            <div
+                                class="fancy-icon-back bg-black d-flex justify-content-center align-items-center rounded-circle animated pulse slower infinite">
+                                <img src="img/icons/cloud.png" alt="" width="100%" style="max-width: 100px;">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="feature-desc mt-3 d-none animated fadeIn" id="feature-6">
+                        <div class="section-header text-left">
+                            <h4 class="subtitle text-uppercase">ai-ready</h4>
+                            <h2 class="text-capitalize display-5" style="font-weight: 300;"><span
+                                    class="fw-bold">BlockchainGPT!</span>
+                            </h2>
+                        </div>
+
+                        <div class="fs-4 mb-5">
+                            <p>Native connectors for OpenAI's GPT-3 & GPT-4. Add AI to your smart contracts with ease.
+                            </p>
+                        </div>
+                        <div class="d-flex justify-content-center align-items-center p-5">
+                            <div
+                                class="fancy-icon-back bg-black d-flex justify-content-center align-items-center rounded-circle animated pulse slower infinite">
+                                <img src="img/icons/ai.png" alt="" width="100%" style="max-width: 100px;">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Features End -->
+
+
+
+    <!-- Coin Start -->
+    <div class="section bg-black text-white pt-5" id="coin">
+        <div class="container pt-5">
+            <div class="section-header py-5 revealOnScroll" data-animation="fadeInUp">
+                <h2 class="text-capitalize text-center display-6" style="font-weight: 300;">Powered by $<span
+                        class="fw-bold">WUNDA</span>COIN</h2>
+                </h2>
+            </div>
+            <div class="row">
+                <div class="col-lg-6 mb-5">
+                    <div class="revealOnScroll" data-animation="fadeInLeft">
+                        <p>$WUNDA is an ERC-20 utility token operating on the Ethereum blockchain.
+                        </p>
+                        <p> It will be the primary currency of Wundaflow SaaS platform (and any future Wundalab
+                            products)
+                            and may also be used for exclusive Wundaverse games.</p>
+                    </div>
+                    <div class="row g-3 text-uppercase my-5">
+                        <div class="col-4 py-3 rounded text-center revealOnScroll delay-04s" data-animation="fadeInUp"
+                            style="background: linear-gradient(351deg, #000 50%, rgba(147, 51, 234, 1) 100%);">
+                            <h5 class="fw-bold mb-0">1 billion</h5>
+                            <div>total supply</div>
+                        </div>
+                        <div class="col-4 py-3 rounded text-center revealOnScroll delay-04s" data-animation="fadeInDown"
+                            style="background: linear-gradient(180deg, #000 50%, rgba(147, 51, 234, 1) 100%);">
+                            <h5 class="fw-bold mb-0">zero</h5>
+                            <div>buy/sell tax</div>
+                        </div>
+                        <div class="col-4 py-3 rounded text-center revealOnScroll delay-04s" data-animation="fadeInUp"
+                            style="background: linear-gradient(11deg, #000 50%, rgba(147, 51, 234, 1) 100%);">
+                            <h5 class="fw-bold mb-0">utility</h5>
+                            <div>token</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-lg-3 d-flex justify-content-center mb-5 revealOnScroll delay-04s"
+                    data-animation="fadeIn">
+                    <div class="coin-animation-container">
+                        <div class="y-axis-container">
+                            <div class="coin-container">
+                                <div class="coinflash"></div>
+                                <div class="coin coinside">
+                                    <div class="coinshine" style="transform:rotate(-30deg);"></div>
+                                </div>
+                                <div class="side-coin"></div>
+                                <div class="coin">
+                                    <img src="img/icon-removebg.png" alt="">
+                                    <div class="coinshine"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <h4 class="text-center fw-lighter">$WUNDA</h4>
+                    </div>
+                    <style>
+                        .coin-animation-container {
+                            width: 200px;
+                            height: 300px;
+                            margin-top: -5em;
+                        }
+
+                        .coin-container {
+                            position: relative;
+                            top: 30px;
+                            height: 300px;
+                            width: 190px;
+                            transform: scale(0.5) translateX(0) scaleY(0.7);
+                        }
+
+                        .y-axis-container {
+                            animation: coinbounce 2.6s infinite ease-in-out;
+                        }
+
+                        .coin {
+                            position: absolute;
+                            height: 300px;
+                            left: 0;
+                            width: 170px;
+                            background: #9333ea;
+                            border-radius: 100%;
+                            overflow: hidden;
+                            margin: auto;
+                        }
+
+                        .side-coin {
+                            position: absolute;
+                            left: 85px;
+                            height: 300px;
+                            width: 35px;
+                            background: #9b47ea;
+                        }
+
+                        .coinside {
+                            position: absolute;
+                            background: #9b47ea;
+                            left: 22px;
+                            width: 165px;
+                            height: 304px;
+                            top: -2px;
+                        }
+
+                        .coinshine {
+                            width: 400px;
+                            height: 20px;
+                            background: rgba(255, 255, 255, 0.65);
+                            transform: rotate(25deg);
+                            animation: coinshine 5s infinite;
+                        }
+
+                        .coinflash {
+                            z-index: 200;
+                            position: absolute;
+                            width: 15px;
+                            height: 15px;
+                            background: white;
+                            top: 30px;
+                            right: 20px;
+                            animation: coinflash 7s infinite;
+                        }
+
+                        .coin-container img {
+                            position: absolute;
+                            width: 100px;
+                            height: 100px;
+                            transform: rotate(53deg) skew(26deg);
+                            top: 94px;
+                            left: 35px;
+                            overflow: hidden;
+                        }
+
+                        @keyframes coinbounce {
+                            20% {
+                                animation-timing-function: ease-out;
+                                transform: translateY(-60px);
+                            }
+
+                            50% {
+                                animation-timing-function: ease-out;
+                                transform: translateY(-80px);
+                            }
+                        }
+
+                        @keyframes coinflash {
+                            0% {
+                                transform: rotate(0deg) scale(0);
+                            }
+
+                            8% {
+                                transform: rotate(0deg) scale(0);
+                            }
+
+                            10% {
+                                transform: rotate(150deg) scale(1.8);
+                            }
+
+                            15% {
+                                transform: rotate(45deg) scale(0);
+                            }
+
+                            100% {
+                                transform: rotate(45deg) scale(0);
+                            }
+                        }
+
+
+                        @keyframes coinshine {
+                            20% {
+                                transform: rotate(25deg) translateY(400px);
+                            }
+
+                            100% {
+                                transform: rotate(25deg) translateY(400px);
+                            }
+                        }
+                    </style>
+                </div>
+
+                <div class="col-sm-6 col-lg-3 mb-5">
+                    <div>
+                        <div class="bg-primary text-black rounded py-2 px-4 mb-2 revealOnScroll"
+                            data-animation="fadeInRight">Wundaflow credit</div>
+                        <div class="bg-primary text-black rounded py-2 px-4 mb-2 ms-sm-3 revealOnScroll delay-02s"
+                            data-animation="fadeInRight">Staking</div>
+                        <div class="bg-primary text-black rounded py-2 px-4 mb-2 ms-sm-4 revealOnScroll delay-04s"
+                            data-animation="fadeInRight">Game entry</div>
+                        <div class="bg-primary text-black rounded py-2 px-4 mb-2 ms-sm-3 revealOnScroll delay-06s"
+                            data-animation="fadeInRight">Prize pool seeding</div>
+                        <div class="bg-primary text-black rounded py-2 px-4 mb-2 revealOnScroll delay-08s"
+                            data-animation="fadeInRight">Listings on DEX/CEX</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="d-flex justify-content-center align-items-center pb-5">
+                <a class="btn btn-primary rounded px-3 px-sm-5 py-2 py-sm-3 me-2 mb-3 revealOnScroll delay-04s"
+                    data-animation="fadeInUp" href="#">
+                    <div class="d-flex align-items-center">
+                        <img src="img/icon-removebg.png" alt="" height="40">
+                        <div class="text-start ps-3">
+                            <div style="font-size: 12px;">Get FREE</div>
+                            <div class="fw-light" style="line-height: .8;">$<span class="fw-bold">WUNDA</span>COINS
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a class="btn btn-primary rounded px-3 px-sm-5 py-2 py-sm-3 me-2 mb-3 revealOnScroll delay-04s"
+                    data-animation="fadeInUp" href="#">
+                    <div class="d-flex align-items-center p-1">
+                        <i class="fa-solid fa-2x fa-dollar-sign"></i>
+                        <div class="text-start ps-3">
+                            <div style="font-size: 12px;">Buy coins on</div>
+                            <div style="line-height: .8;">EXCHANGE
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+        </div>
+    </div>
+    <!-- Coin End -->
+
+
+
+    <!-- Banner Start -->
+    <div id="banner" class="section banner text-white position-relative p-5 mt-5"
+        style="background: linear-gradient(180deg, rgba(0, 0, 0, 1) 10%, rgba(147, 51, 234, 1) 100%);">
+        <div class="container p-5">
+            <div class="d-flex justify-content-center align-items-center">
+                <div class="position-relative d-none d-lg-block wow zoomIn" style="overflow: hidden; height: 400px;">
+                    <div class="position-absolute bg-black bg-morphing wow fadeInUp" style="height: 100%; width: 100%;">
+                    </div>
+                    <img src="img/mail.png" alt="" height="400" class="position-relative" style="z-index:2">
+                </div>
+                <div class="text-center col-lg-6 mx-auto">
+                    <h2 class="display-6 mb-4 wow fadeInUp" style="max-width: 700px; font-weight: 300; margin: auto;">
+                        Wundaflow is
+                        the missing<br><span class="fw-bold">web2 ↔ web3</span> workflow engine</h2>
+                    <h4 class="mb-4 wow fadeInUp">Simplify event handling to and
+                        from the blockchain, make your apps more reliable and deliver features faster!</h4>
+                    <a class="btn btn-white rounded shadow px-3 px-sm-5 py-2 py-sm-3 me-2 mb-3 wow fadeInUp"
+                        href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#subscribeModal">
+                        <div class="d-flex align-items-center">
+                            <i class="fa-regular fa-envelope fa-2x me-2"></i>
+                            <div class="text-start">
+                                <div style="font-size: 12px;">Subscribe to our</div>
+                                <div style="line-height: .8;">Newsletter</div>
+                            </div>
+                        </div>
+                    </a>
+                    <a class="btn btn-white-hollow border-2 text-capitalize rounded px-3 px-sm-5 py-2 py-sm-3 mb-3 wow fadeInUp"
+                        href="https://docs.wundaflow.com/">
+                        <div class="d-flex align-items-center">
+                            <i class="fa-solid fa-scroll fa-2x me-2"></i>
+                            <div class="text-start">
+                                <div style="font-size: 12px;">Read the</div>
+                                <div style="line-height: .8;">Whitepaper</div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- Banner End -->
+
+
+    <!-- Contact Start -->
+    <div id="footer" class="section position-relative section-separator-top">
+        <div class="bg-black">
+            <div class="container py-5">
+                <div class="row">
+                    <div class="col-lg-6 mb-5">
+                        <h2 class="text-white mb-4"><span class="fw-bold">Wundaflow</span></h2>
+                        <p>Wundaflow is a resilient workflow engine for blockchain connected apps. It provides
+                            guaranteed execution of tasks in response to events on the blockchain, a time/interval or
+                            from API calls.
+                        </p>
+                        <p>We are like IFTTT for Web 3.0</p>
+                    </div>
+                    <div class="col-6 col-lg-3">
+                        <div class="footer-info px-4 d-flex justify-content-center">
+                            <div>
+                                <h2 class="text-white mb-4">Contact</h2>
+                                <h6 class="d-flex text-start align-items-center mb-4">
+                                    <i class="fa-solid fa-xl fa-location-dot text-white me-3"></i>
+                                    <a href="https://goo.gl/maps/H8v1mM3cdBt9fVz77" target="_blank"
+                                        rel="noopener noreferrer" class="text-white">312
+                                        Long Street,<br>Los Angeles, USA</a>
+                                </h6>
+                                <h6 class="d-flex text-start align-items-center mb-4">
+                                    <i class="fa-solid fa-xl fa-phone text-white me-3"></i>
+                                    <a href="tel:+12345678900" class="text-white">+1 234 567 8900</a>
+                                </h6>
+                                <h6 class="d-flex text-start align-items-center mb-4">
+                                    <i class="fa-regular fa-xl fa-envelope text-white me-3"></i>
+                                    <a href="mailto:contact@maidsforgood.com" class="text-white">info@wundalab.com</a>
+                                </h6>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-lg-3">
+                        <div class="d-flex justify-content-end">
+                            <div>
+                                <h2 class="text-white mb-4">Links</h2>
+                                <a href="https://docs.wundaflow.com/"
+                                    class="nav-item nav-link text-uppercase">Whitepaper</a>
+                                <a href="https://docs.wundaflow.com/tokenomics"
+                                    class="nav-item nav-link text-uppercase">Tokenomics</a>
+                                <a href="https://docs.wundaflow.com/roadmap"
+                                    class="nav-item nav-link text-uppercase">Roadmap</a>
+                                <a href="https://docs.wundaflow.com/api/api-methods"
+                                    class="nav-item nav-link text-uppercase">API</a>
+                                <a href="https://docs.wundaflow.com/wundaverse/intro"
+                                    class="nav-item nav-link">Wundaverse</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Contact End -->
+
+
+
+    <!-- Copyright Start -->
+    <div class="section container-fluid bg-black" id="copyright">
+        <div class="container py-4">
+            <div class="row">
+                <div class="col-md-4 text-center text-md-start p-3">
+                    <a href="https://twitter.com/wundalab" target="_blank" class="text-white">
+                        <i class="fa-brands fa-2x fa-square-twitter"></i>
+                    </a>
+                </div>
+                <div class="col-md-4 text-center p-3">
+                    <span>
+                        <span class="text-primary">
+                            <i class="fas fa-copyright text-primary me-2"></i><b>Wundalab</b></span>. All right
+                        reserved.
+                    </span>
+                </div>
+                <div class="col-md-4 text-center text-md-end p-3">
+                    <span>
+                        Designed By <a href="https://primsite.ro" target="_blank" class="text-primary">Primsite</a>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Copyright End -->
+
+
+
+    <!-- Floating Button Start -->
+    <section id="sticky-action-button" class="d-none d-xxl-block position-fixed animated fadeInUp delay-1s">
+        <div class="d-flex align-items-center">
+            <div class="main-content-container d-flex align-items-center">
+                <img src="img/icon.png" alt="Logo" height="50" class="me-3 rounded">
+                <div class="copy-wrapper me-5">
+                    <div class="company-name">
+                        <span class="fw-bold">Wundaflow</span>
+                    </div>
+                    <div class="sub-text">
+                        The new IFTTT for crypto
+                    </div>
+                </div>
+            </div>
+            <a class="btn btn-primary rounded px-4" href="javascript:void(0)" data-bs-toggle="modal"
+                data-bs-target="#subscribeModal">
+                Join waitlist
+            </a>
+        </div>
+        <a href="javascript:void(0)" id="close-floating-action"
+            class="position-absolute bg-black rounded-circle text-white p-2">
+            <i class="fa-solid fa-xmark"></i>
+        </a>
+    </section>
+    <!-- Floating Button End -->
+
+
+    <!-- Subscribe Modal Start -->
+    <div class="modal fade" id="subscribeModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header"> <button type="button"
+                        class="close btn btn-primary rounded-circle d-flex justify-content-center align-items-center"
+                        data-bs-dismiss="modal" aria-label="Close" style="width: 40px; height: 40px;">
+                        <span aria-hidden="true">&times;</span> </button> </div>
+                <div class="modal-body p-0 row">
+                    <div class="col-12 col-md-5 p-0 imgmodal-container">
+                        <img src="img/mail.png" style="width: 100%; height: 100%; object-fit: cover;" />
+                    </div>
+                    <div class="details col-12 col-md-7">
+                        <h2 class="mb-4">STAY TUNED</h2>
+                        <p>Sign up to the <span class="fw-bold">Wundaflow</span> newsletter for news and offers.</p>
+                        <div class="form-group my-3 py-3">
+                            <div class="input-group">
+                                <input type="text" class="form-control rounded" placeholder="Your Email Address">
+                                <div class="input-group-append">
+                                    <button class="btn btn-primary px-4 py-3 ms-3">Sign Up</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Subscribe Modal End -->
+
+
+
+
+    <!-- jQuery Library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"
+        integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- Bootstrap JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.1/js/bootstrap.min.js"
+        integrity="sha512-fHY2UiQlipUq0dEabSM4s+phmn+bcxSYzXP4vAXItBvBHU7zAM/mkhCZjtBEIJexhOMzZbgFlPLuErlJF2b+0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- WOW JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"
+        integrity="sha512-Eak/29OTpb36LLo2r47IpVzPBLXnAMPAVypbSZiZ4Qkf8p/7S/XRG5xp7OKWPPYfJT6metI+IORkR5G8F900+g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- Lightbox for Bootstrap 5 JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bs5-lightbox/1.8.3/index.bundle.min.js"
+        integrity="sha512-wOwwlvSeaATXscQHfDsAUnt3cBBvrKkyf7lI+k/88X6x/fxtc678fTdKRNcxZxtRdpzYFiIqqW5uIRUiPlZJlw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- Waypoints JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/noframework.waypoints.min.js"
+        integrity="sha512-fHXRw0CXruAoINU11+hgqYvY/PcsOWzmj0QmcSOtjlJcqITbPyypc8cYpidjPurWpCnlB8VKfRwx6PIpASCUkQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- OWL Carousel JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+        integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>
